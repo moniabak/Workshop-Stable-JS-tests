@@ -1,0 +1,17 @@
+{
+  "name": "work",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node nioghtwatch.js -e chrome tests/loginPage.js"
+  },
+  "author": "Krzysztof Kolodziejczyk",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^2.45.0",
+    "nightwatch": "^1.0.19",
+    "npm": "^6.8.0",
+    "selenium-server": "^3.141.59"
+  }
+}

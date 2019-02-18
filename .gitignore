@@ -1,0 +1,9 @@
+reports/*
+!reports/logs
+reports/logs/*
+!reports/logs/.gitkeep
+.vscode/
+screenshots/*
+!screenshots/.gitkeep
+node_modules/*
+package-lock.json
