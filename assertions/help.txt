@@ -5,14 +5,14 @@ exports.assertion = function() {
    * inside the XML reports
    * @type {string}
    */
-  this.message;
+  this.message
 
   /**
    * A value to perform the assertion on. If a function is
    * defined, its result will be used.
    * @type {function|*}
    */
-  this.expected;
+  this.expected
 
   /**
    * The method which performs the actual assertion. It is
@@ -21,7 +21,7 @@ exports.assertion = function() {
    */
   this.pass = function(value) {
 
-  };
+  }
 
   /**
    * The method which returns the value to be used on the
@@ -31,7 +31,7 @@ exports.assertion = function() {
    */
   this.value = function(result) {
 
-  };
+  }
 
   /**
    * Performs a protocol command/action and its result is
@@ -41,6 +41,5 @@ exports.assertion = function() {
   this.command = function(callback) {
 
     return this;
-  };
-
-};
+  }
+}

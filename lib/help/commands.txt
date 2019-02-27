@@ -2,54 +2,41 @@ Przejście na wybraną stronę:
 
 .url('link do strony')
 *******************************************************
-Oczekiwanie na element:
+Oczekiwanie na widoczny element:
 
-.waitForElementVisible(selektor, czas)
+browser.waitForElementVisible(selektor, czas)
 *******************************************************
 Wyszukanie elementu na stronie:
 
-.element('css selector', 'selektor', (result) => {
+browser.element('css selector', 'selektor', (result) => {
       
     })
 *******************************************************
-Wyszukanie elementu na stronie:
+Wyszukanie wielu elementów na stronie:
 
-.elements('css selector', 'selektor', (result) => {
+browser.elements('css selector', 'selektor', (result) => {
       
     })
 *******************************************************
 Kliknięcie:
 
-.click(selektor)
+browser.click(selektor)
 *******************************************************
 Usunięcie wartości z pola:
 
-.clearValue(selektor)
+browser.clearValue(selektor)
 *******************************************************
 Wprowadzenie wartości w pole:
 
-.setValue('Przykładowy tekst')
+browser.setValue('Przykładowy tekst')
 *******************************************************
 Pobranie tekstu z elementu:
 
-.getText("#main ul li a.first", (result) =>{
+browser.getText("#main ul li a.first", (result) =>{
 
 }
 *******************************************************
-Zakończenie sesji testu:
+Zakończenie sesji przeglądarki:
 
-.end()
+browser.end()
 *******************************************************
-Komenda rozwinięta - kliknięcie elementu po tekście:
-
-module.exports.command = function (selector, position, txt, message = `Setting value: ${txt}, to element on position ${position} from list ${selector}`) {
-    return this
-        .WaitForElementsVisible(selector)
-        .elements('css selector', selector, (elements) => {
-            this
-                .elementIdClear(elements.value[position - 1].ELEMENT)
-                .elementIdValue(elements.value[position - 1].ELEMENT, txt, () => {
-                    this.log(message)
-                })
-        })
-}
