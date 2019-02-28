@@ -11,12 +11,12 @@ module.exports = {
       .setValue('#email', 'administrator@testarena.pl')
       .waitForElementVisible('#password', 1000)
       .clearValue('#password')
-      .SetValue('#password', 'sumXQQ72$L')
+      .setValue('#password', 'sumXQQ72$L')
       .waitForElementVisible('#save', 1000)
-      .Click('#login')
+      .click('#login')
       .pause(2000)
       .waitForElementVisible('body', 1000)
-      .assert.urlEquals('http://demo.testarena.pl/', 'optional message')
+      .assert.urlEquals('http://demo.testarena', 'optional message')
     browser.end()
   }
 }
