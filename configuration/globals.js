@@ -1,6 +1,6 @@
 module.exports = {
 
-  // baseUrl: 'http://demo.testarena.pl/zaloguj',
+  // baseUrl: ['http://demo.testarena.pl/zaloguj', 'http: //testarena.pl/']
 
   // before(cb) {
   //     console.log(process.argv)
