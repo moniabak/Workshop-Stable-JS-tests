@@ -4,7 +4,7 @@ module.exports = {
     browser
       .url('http://demo.testarena.pl/zaloguj')
       .waitForElementVisible('#content_login', 1000)
-      .assert.assertTitle('TestArena Demo')
+      .assert.title('TestArena Demo')
       .assert.visible('.front-log')
       .waitForElementVisible('#email', 1000)
       .clearValue('#email')
