@@ -1,6 +1,6 @@
 module.exports = {
 
-    email: '#email',
-    password: '#password',
-    loginBtn: '#save'
+    email: '',
+    password: '',
+    loginBtn: ''
 }

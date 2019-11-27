@@ -3,6 +3,7 @@ const screenshotPath = './screenshots/' + packageJson.version + '/'
 
 
 const config = {
+
   "src_folders": [
     "tests"
   ],
@@ -23,10 +24,10 @@ const config = {
     }
   },
 
-  "test_workers": {
-    "enabled": true,
-    "workers": 1
-  },
+  // "test_workers": {
+  //   "enabled": true,
+  //   "workers": 1
+  // },
 
   "test_settings": {
 
@@ -52,9 +53,20 @@ const config = {
       "desiredCapabilities": {
         'browserName': 'firefox',
         'moz:firefoxOptions': {
-          'args': [
-            '-maximize',
-          ]
+          'args': ["-maximize"]
+        },
+        'javascriptEnabled': true,
+        'marionette': true,
+        'acceptSslCerts': true,
+        'acceptInsecureCerts': true
+      }
+    },
+
+    "chrome": {
+      "desiredCapabilities": {
+        'browserName': 'chrome',
+        "chromeOptions": {
+          "args": ['start-maximized']
         },
         'javascriptEnabled': true,
         'marionette': true,

@@ -7,9 +7,9 @@ module.exports = {
   //   },
 
   // beforeEach(browser, cb) {
-  //   browser.options.screenshots.path = './screenshots-mobile/0.0.2/'
-  //   console.log(browser.options.screenshots.path)
-  //   cb();
+    
+
+  //   cb()
   // },
 
   //   after(cb) {
@@ -24,9 +24,9 @@ module.exports = {
   //   })
   // },
 
-  // abortOnAssertionFailure: true,
-  // waitForConditionPollInterval: 300,
-  // waitForConditionTimeout: 2000,
-  // retryAssertionTimeout: 2000,
-  // throwOnMultipleElementsReturned: false
+  abortOnAssertionFailure: true,
+  waitForConditionPollInterval: 300,
+  waitForConditionTimeout: 2000,
+  retryAssertionTimeout: 2000,
+  throwOnMultipleElementsReturned: false
 }
