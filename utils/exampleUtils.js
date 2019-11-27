@@ -5,7 +5,7 @@ class Utils {
     }
 
     getBaseUrl() {
-        let baseUrl = ['http://demo.testarena.pl/zaloguj', 'http: //testarena.pl/']
+        let baseUrl = ['http://demo.testarena.pl/zaloguj']
 
         return baseUrl
     }
