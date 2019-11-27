@@ -9,7 +9,6 @@ class Utils {
 
         return baseUrl
     }
-
 }
 
 module.exports.Utils = Utils
