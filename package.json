@@ -11,6 +11,7 @@
     "nightwatch": "^0.9.21",
     "npm": "^6.13.1",
     "selenium-server": "^3.141.59",
-    "selenium-download": "^2.0.14"
+    "selenium-download": "^2.0.14",
+    "log4js": "^6.1.0"
   }
 }
